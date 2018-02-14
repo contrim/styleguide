@@ -6,6 +6,10 @@ import {
 } from "react-router-dom";
 import ButtonsPage from './pages/Buttons'
 import DevTools from './pages/DevTools'
+import IndexPage from './pages/IndexPage'
+import StackPage from './pages/Stack'
+import ModelsPage from './pages/Models'
+import Agenda from '../../agenda/Agenda'
 class Content extends Component {
   render() {
     return(
@@ -19,8 +23,12 @@ class Content extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 col-lg-offset-2">
+                        <Route exact path="/" component={IndexPage}/>
                         <Route path="/components/button" component={ButtonsPage}/>
+                        <Route path="/components/agenda" component={Agenda}/>
+                        <Route path="/devtools/stack" component={StackPage}/>
                         <Route path="/devtools/tools" component={DevTools}/>
+                        <Route path="/devtools/models" component={ModelsPage}/>
                     </div>
                 </div>
             </div>
