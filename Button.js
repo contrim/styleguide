@@ -32,7 +32,7 @@ class Button extends Component {
       <div>
         <button className="btn btn-default new_instance_bt dropdown-toggle" title="Nova Pasta" type="button" data-toggle="dropdown" aria-expanded="false">
           <i className={this.state.icon}></i>
-          {this.state.MenuTitle}
+          &nbsp;{this.state.MenuTitle}
         </button>
         <ul className="dropdown-menu dropdown-menu-left" role="menu">
           {lis}

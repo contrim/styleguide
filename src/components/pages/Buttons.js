@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from './../../../Button'
 
 class ButtonsPage extends Component {
   render() {
@@ -42,7 +43,14 @@ class ButtonsPage extends Component {
               <br />
               &nbsp;&nbsp;a.btn-export-data(role="menuitem") Informações da Pasta
             </code>
-
+            <br />
+            <br />
+            <h3>React Component</h3>
+            <Button title="Nova Pasta" icon="fa fa-plus" menu_options={[{title:'Configurar eventos',url:'#'},{title:'Importar Pastas',url:'#'}]}/>
+            <br />
+            <code>
+              &lt;Button title="Nova Pasta" icon="fa fa-plus" menu_options=OBJECT_ARRAY /&gt;
+            </code>
         </div>
     </div>
     )
