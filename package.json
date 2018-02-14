@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --inline --hot",
     "build": "webpack"
   },
-  "author": "",
+  "author": "PauloMarceloNogueira<paulo@linte.com.br>",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
