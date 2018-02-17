@@ -10,6 +10,7 @@ import IndexPage from './pages/IndexPage'
 import StackPage from './pages/Stack'
 import ModelsPage from './pages/Models'
 import Agenda from '../../agenda/Agenda'
+import CheckboxesPage from './pages/Checkboxes'
 class Content extends Component {
   render() {
     return(
@@ -24,6 +25,7 @@ class Content extends Component {
                 <div className="row">
                     <div className="col-lg-8 col-lg-offset-2">
                         <Route exact path="/" component={IndexPage}/>
+                        <Route path="/components/checkboxes" component={CheckboxesPage}/>
                         <Route path="/components/button" component={ButtonsPage}/>
                         <Route path="/components/agenda" component={Agenda}/>
                         <Route path="/devtools/stack" component={StackPage}/>

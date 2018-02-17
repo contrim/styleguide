@@ -21,15 +21,15 @@ class Sidebar extends Component {
                 <ul className="dropdown-menu" role="menu">
                   <li className="dropdown-header">user interface</li>
                   <li><NavLink to="/components/button">buttons</NavLink></li>
-                  <li><NavLink to="/components/agenda"> Agenda React Component </NavLink></li>
+                  <li><NavLink to="/components/agenda"> agenda react component</NavLink></li>
                   <li><NavLink to="#">cards</NavLink></li>
-                  <li><NavLink to="#">checkbox</NavLink></li>
                   <li><NavLink to="#">drag & drop</NavLink></li>
                   <li><NavLink to="#">input fields</NavLink></li>
                   <li><NavLink to="#">loader</NavLink></li>
                   <li><NavLink to="#">navigation</NavLink></li>
                   <li><NavLink to="#">notification</NavLink></li>
                   <li><NavLink to="#">pagination</NavLink></li>
+                  <li><NavLink to="/components/checkboxes">checkboxes</NavLink></li>
                   <li><NavLink to="#">radio button</NavLink></li>
 
                 </ul>
@@ -37,7 +37,7 @@ class Sidebar extends Component {
               <li className="dropdown">
                 <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">developer.guide_ <span className="caret"></span></NavLink>
                 <ul className="dropdown-menu" role="menu">
-                  <li className="dropdown-header">stack && dev tools</li>
+                  <li className="dropdown-header">stack & dev tools</li>
                   <li><NavLink to="/devtools/tools">tools</NavLink></li>
                   <li><NavLink to="/devtools/stack">stack</NavLink></li>
                   <li><NavLink to="#">infra</NavLink></li>
@@ -52,13 +52,13 @@ class Sidebar extends Component {
               <li className="dropdown">
                 <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">projects_ <span className="caret"></span></NavLink>
                 <ul className="dropdown-menu" role="menu">
-                  <li><a href="https://github.com/linte/meteor-linte">_app</a></li>
-                  <li><a href="https://github.com/linte/lambda">_lambda</a></li>
-                  <li><a href="https://github.com/linte/linte-dashboard">_dashboard</a></li>
-                  <li><a href="https://github.com/linte/admin">_admin</a></li>
-                  <li><a href="https://github.com/linte/linte_home">_site</a></li>
-                  <li><a href="https://github.com/linte/linte-invenis-lambda">_invenislambda</a></li>
-                  <li><a href="https://github.com/linte/linte-file-import">_ftp</a></li>
+                  <li><a href="https://github.com/linte/meteor-linte" target='_blank'>_app</a></li>
+                  <li><a href="https://github.com/linte/lambda" target='_blank'>_lambda</a></li>
+                  <li><a href="https://github.com/linte/linte-dashboard" target='_blank'>_dashboard</a></li>
+                  <li><a href="https://github.com/linte/admin" target='_blank'>_admin</a></li>
+                  <li><a href="https://github.com/linte/linte_home" target='_blank'>_site</a></li>
+                  <li><a href="https://github.com/linte/linte-invenis-lambda" target='_blank'>_invenislambda</a></li>
+                  <li><a href="https://github.com/linte/linte-file-import" target='_blank'>_ftp</a></li>
                 </ul>
               </li>
               <li>
