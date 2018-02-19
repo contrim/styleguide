@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Checkboxes from '../ui/Checkboxes'
 class CheckboxesPage extends Component {
   render() {
     return (
@@ -45,6 +45,22 @@ class CheckboxesPage extends Component {
               </div>
             </div>{/* /disabled checkbox */}
             <br /><br />
+            <h3>react checkbox</h3>
+            <div className="panel panel-default">
+              <div className="panel-body">
+                <Checkboxes name="checkboxExampleDisable" label="exemple react checkbox disable" disabled />
+                <Checkboxes name="checkboxExampleEnable" label="exemple react checkbox enable" />
+                <br />
+                <br />
+                <p>Code</p>
+                <code>
+                  &lt;Checkboxes name="checkboxExample" label="Exemple React Checkbox disable" disabled /&gt;
+                  <br />
+                  <br />
+                  &lt;Checkboxes name="checkboxExample" label="Exemple React Checkbox enable" /&gt;
+                </code>
+              </div>
+            </div>
         </div>
     </div>
     )

@@ -22,16 +22,8 @@ class Sidebar extends Component {
                   <li className="dropdown-header">user interface</li>
                   <li><NavLink to="/components/button">buttons</NavLink></li>
                   <li><NavLink to="/components/agenda"> agenda react component</NavLink></li>
-                  <li><NavLink to="#">cards</NavLink></li>
-                  <li><NavLink to="#">drag & drop</NavLink></li>
-                  <li><NavLink to="#">input fields</NavLink></li>
-                  <li><NavLink to="#">loader</NavLink></li>
-                  <li><NavLink to="#">navigation</NavLink></li>
-                  <li><NavLink to="#">notification</NavLink></li>
-                  <li><NavLink to="#">pagination</NavLink></li>
                   <li><NavLink to="/components/checkboxes">checkboxes</NavLink></li>
-                  <li><NavLink to="#">radio button</NavLink></li>
-
+                  <li><NavLink to="/components/modals">modals</NavLink></li>
                 </ul>
               </li>
               <li className="dropdown">
