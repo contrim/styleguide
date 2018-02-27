@@ -21,9 +21,9 @@ class DropdownButton extends Component {
           &nbsp; novo<br />
           &nbsp; i.fas.fa-caret-down<br />
           ul.dropdown-menu.dropdown-flux(role="menu")<br />
-          &nbsp; li(role="presentation")
-          &nbsp;&nbsp; a(role="menuitem") ALUF
-          &nbsp;&nbsp; a(role="menuitem") AVCB
+          &nbsp; li(role="presentation") <br />
+          &nbsp;&nbsp; a(role="menuitem") ALUF <br />
+          &nbsp;&nbsp; a(role="menuitem") AVCB <br />
           &nbsp;&nbsp; a(role="menuitem") Ação renovatória
         </code>
       </div>

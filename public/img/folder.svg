@@ -1,0 +1,29 @@
+<svg width="17" height="15" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#239;&#132;&#148;</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-17071 -5691)">
+<rect x="17071" y="5691" width="17" height="15" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 17030 5399L 17401 5399L 17401 6259L 17030 6259L 17030 5399Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="barra esquerda_expansivo_1" clip-path="url(#clip-0)">
+<path d="M 17030 5399L 17401 5399L 17401 6259L 17030 6259L 17030 5399Z" fill="#E5E5E5"/>
+<g id="Rectangle 3.2">
+<use xlink:href="#path0_fill" transform="translate(17039 5475)" fill="#FCFCFC"/>
+</g>
+<g id="Rectangle 4.1">
+<use xlink:href="#path1_fill" transform="translate(17039 5626)" fill="#FAFAFA"/>
+</g>
+<g id="pastas_categorias">
+<g id="&#239;&#132;&#148;">
+<use xlink:href="#path2_fill" transform="translate(17071 5691)" fill="#767676"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 344 0L 344 774L 0 774L 0 0Z"/>
+<path id="path1_fill" d="M 0 0L 344 0L 344 219L 0 219L 0 0Z"/>
+<path id="path2_fill" d="M 15.4286 12.75C 15.4286 13.2824 14.9967 13.7143 14.4643 13.7143L 2.25 13.7143C 1.71763 13.7143 1.28571 13.2824 1.28571 12.75L 1.28571 3.10714C 1.28571 2.57478 1.71763 2.14286 2.25 2.14286L 5.46429 2.14286C 5.99665 2.14286 6.42857 2.57478 6.42857 3.10714L 6.42857 3.75C 6.42857 4.28237 6.86049 4.71429 7.39286 4.71429L 14.4643 4.71429C 14.9967 4.71429 15.4286 5.14621 15.4286 5.67857L 15.4286 12.75ZM 16.7143 5.67857C 16.7143 4.44308 15.6998 3.42857 14.4643 3.42857L 7.71429 3.42857L 7.71429 3.10714C 7.71429 1.87165 6.69978 0.857143 5.46429 0.857143L 2.25 0.857143C 1.01451 0.857143 0 1.87165 0 3.10714L 0 12.75C 0 13.9855 1.01451 15 2.25 15L 14.4643 15C 15.6998 15 16.7143 13.9855 16.7143 12.75L 16.7143 5.67857Z"/>
+</defs>
+</svg>

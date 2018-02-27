@@ -1,0 +1,32 @@
+<svg width="16" height="17" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Shape</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-18000 -5873)">
+<rect x="18000" y="5873" width="16" height="17" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 17866 5817L 18275 5817L 18275 6425L 17866 6425L 17866 5817Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="comportamento adicionais" clip-path="url(#clip-0)">
+<path d="M 17866 5817L 18275 5817L 18275 6425L 17866 6425L 17866 5817Z" fill="#FFFFFF"/>
+<g id="Rectangle 8">
+<use xlink:href="#path0_fill" transform="translate(17886 5860)" fill="#FFFFFF"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(17886 5860)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(17886 5860)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="Group 7.3">
+<g id="Shape">
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 -1 18000 5890)" fill="#999999"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 222 0L 222 41L 0 41L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 222 0L 223 0L 223 -1L 222 -1L 222 0ZM 222 41L 222 42L 223 42L 223 41L 222 41ZM 0 41L -1 41L -1 42L 0 42L 0 41ZM 0 1L 222 1L 222 -1L 0 -1L 0 1ZM 221 0L 221 41L 223 41L 223 0L 221 0ZM 222 40L 0 40L 0 42L 222 42L 222 40ZM 1 41L 1 0L -1 0L -1 41L 1 41Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 14.0724 16.3637L 1.5636 16.3637C 0.703619 16.3637 0 15.6273 0 14.7273L 0 0L 3.1272 3.27273L 14.0724 3.27273C 14.9324 3.27273 15.636 4.00909 15.636 4.9091L 15.636 14.7273C 15.636 15.6273 14.9324 16.3637 14.0724 16.3637Z"/>
+</defs>
+</svg>

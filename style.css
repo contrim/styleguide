@@ -841,7 +841,7 @@ div.angrytext {
 /* NOTIFICATION */
 
 .notificationIcon {
-  font-size: 27px;
+  font-size: 14px;
   color: #999999;
 }
 
@@ -858,4 +858,20 @@ div.angrytext {
   &:after {
     content: "\e9c6"
   }
+}
+
+/* TABS */
+
+.tab-col {
+  border: 1px solid #E0E0E0;
+  height: 65px;
+}
+
+.tab-rows {
+  vertical-align: middle;
+  margin: 20px 0px;
+}
+
+.tab-img-default {
+  background: url('./public/img/arrow-right-tab.svg')
 }

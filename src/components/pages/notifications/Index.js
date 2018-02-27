@@ -6,8 +6,12 @@ class ButtonsPage extends Component {
       <div className="row">
         <div className="col-lg-8 col-lg-offset-2">
           <h1>_notifications</h1>
-          <p>icon</p>
-          <Icon />
+          <h3>icon</h3>
+          <div className="panel panel-default">
+            <div className="panel-body ">
+              <Icon />
+            </div>
+          </div>
         </div>
       </div>
     )

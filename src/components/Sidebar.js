@@ -23,6 +23,7 @@ class Sidebar extends Component {
                   <li><NavLink to="/components/button">buttons</NavLink></li>
                   <li><NavLink to="/components/agenda"> agenda react component</NavLink></li>
                   <li><NavLink to="/components/checkboxes">checkboxes</NavLink></li>
+                  <li><NavLink to="/components/tabs">Tabs</NavLink></li>
                   <li><NavLink to="/components/inputs">inputs</NavLink></li>
                   <li><NavLink to="/components/notifications">notifications</NavLink></li>
                 </ul>

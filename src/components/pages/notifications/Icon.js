@@ -4,8 +4,13 @@ class Icon extends Component {
     return(
       <div>
         <div className="notificationIcon">
-          <i className="fas fa-comment"></i>
+          <i className="fas fa-comment"></i> 5
         </div>
+        <br />
+        <code>
+          .notificationIcon <br />
+          &nbsp; i.fa.fa-comment<br />
+        </code>
       </div>
     )
   }

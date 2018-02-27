@@ -14,6 +14,7 @@ import Agenda from '../../agenda/Agenda'
 import CheckboxesPage from './pages/Checkboxes'
 import ModalsPage from './pages/Modal'
 import InputsPage from './pages/Inputs'
+import TabsPage from './pages/tabs/Index'
 class Content extends Component {
   render() {
     return(
@@ -35,6 +36,7 @@ class Content extends Component {
                         <Route path="/devtools/tools" component={DevTools}/>
                         <Route path="/devtools/models" component={ModelsPage}/>
                         <Route path="/components/modals" component={ModalsPage}/>
+                        <Route path="/components/tabs" component={TabsPage}/>
                         <Route path="/components/inputs" component={InputsPage}/>
                         <Route path="/components/notifications" component={Notifications}/>
                     </div>
