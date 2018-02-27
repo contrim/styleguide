@@ -1911,7 +1911,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(208)("./" + name);
+            __webpack_require__(210)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -4603,7 +4603,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(207)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(209)(module)))
 
 /***/ }),
 /* 1 */
@@ -36023,6 +36023,8 @@ var _reactRouterDom = __webpack_require__(28);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -36041,6 +36043,8 @@ var Sidebar = function (_Component) {
   _createClass(Sidebar, [{
     key: "render",
     value: function render() {
+      var _React$createElement, _React$createElement2;
+
       return _react2.default.createElement(
         _reactRouterDom.HashRouter,
         null,
@@ -36055,7 +36059,7 @@ var Sidebar = function (_Component) {
               { className: "sidebar-brand" },
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: "/" },
+                { className: "sublink", to: "/" },
                 "linte_"
               )
             ),
@@ -36064,7 +36068,7 @@ var Sidebar = function (_Component) {
               { className: "dropdown" },
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: "#", className: "dropdown-toggle", "data-toggle": "dropdown" },
+                (_React$createElement = { className: "sublink", to: "#" }, _defineProperty(_React$createElement, "className", "dropdown-toggle"), _defineProperty(_React$createElement, "data-toggle", "dropdown"), _React$createElement),
                 "components_ ",
                 _react2.default.createElement("span", { className: "caret" })
               ),
@@ -36081,7 +36085,7 @@ var Sidebar = function (_Component) {
                   null,
                   _react2.default.createElement(
                     _reactRouterDom.NavLink,
-                    { to: "/components/button" },
+                    { className: "sublink", to: "/components/button", "data-toggle": "offcanvas" },
                     "buttons"
                   )
                 ),
@@ -36090,16 +36094,7 @@ var Sidebar = function (_Component) {
                   null,
                   _react2.default.createElement(
                     _reactRouterDom.NavLink,
-                    { to: "/components/agenda" },
-                    " agenda react component"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "/components/checkboxes" },
+                    { className: "sublink", to: "/components/checkboxes", "data-toggle": "offcanvas" },
                     "checkboxes"
                   )
                 ),
@@ -36108,126 +36103,17 @@ var Sidebar = function (_Component) {
                   null,
                   _react2.default.createElement(
                     _reactRouterDom.NavLink,
-                    { to: "/components/tabs" },
-                    "Tabs"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "/components/inputs" },
-                    "inputs"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "/components/notifications" },
+                    { className: "sublink", to: "/components/notifications", "data-toggle": "offcanvas" },
                     "notifications"
                   )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "li",
-              { className: "dropdown" },
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { to: "#", className: "dropdown-toggle", "data-toggle": "dropdown" },
-                "developer.guide_ ",
-                _react2.default.createElement("span", { className: "caret" })
-              ),
-              _react2.default.createElement(
-                "ul",
-                { className: "dropdown-menu", role: "menu" },
-                _react2.default.createElement(
-                  "li",
-                  { className: "dropdown-header" },
-                  "stack & dev tools"
                 ),
                 _react2.default.createElement(
                   "li",
                   null,
                   _react2.default.createElement(
                     _reactRouterDom.NavLink,
-                    { to: "/devtools/tools" },
-                    "tools"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "/devtools/stack" },
-                    "stack"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "#" },
-                    "infra"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "/devtools/models" },
-                    "model"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "#" },
-                    "development process"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "#" },
-                    "best practices"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "#" },
-                    "utils & helpers"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "#" },
-                    "tests"
-                  )
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  _react2.default.createElement(
-                    _reactRouterDom.NavLink,
-                    { to: "#" },
-                    "configuring Robomongo"
+                    { className: "sublink", to: "/components/agenda", "data-toggle": "offcanvas" },
+                    " agenda react component"
                   )
                 )
               )
@@ -36237,7 +36123,7 @@ var Sidebar = function (_Component) {
               { className: "dropdown" },
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: "#", className: "dropdown-toggle", "data-toggle": "dropdown" },
+                (_React$createElement2 = { className: "sublink", to: "#" }, _defineProperty(_React$createElement2, "className", "dropdown-toggle"), _defineProperty(_React$createElement2, "data-toggle", "dropdown"), _React$createElement2),
                 "projects_ ",
                 _react2.default.createElement("span", { className: "caret" })
               ),
@@ -40002,29 +39888,29 @@ var _Index3 = __webpack_require__(203);
 
 var _Index4 = _interopRequireDefault(_Index3);
 
-var _DevTools = __webpack_require__(205);
+var _Index5 = __webpack_require__(205);
+
+var _Index6 = _interopRequireDefault(_Index5);
+
+var _DevTools = __webpack_require__(207);
 
 var _DevTools2 = _interopRequireDefault(_DevTools);
 
-var _IndexPage = __webpack_require__(206);
+var _IndexPage = __webpack_require__(208);
 
 var _IndexPage2 = _interopRequireDefault(_IndexPage);
 
-var _Stack = __webpack_require__(209);
+var _Stack = __webpack_require__(211);
 
 var _Stack2 = _interopRequireDefault(_Stack);
 
-var _Models = __webpack_require__(210);
+var _Models = __webpack_require__(212);
 
 var _Models2 = _interopRequireDefault(_Models);
 
-var _Agenda = __webpack_require__(211);
+var _Agenda = __webpack_require__(213);
 
 var _Agenda2 = _interopRequireDefault(_Agenda);
-
-var _Checkboxes = __webpack_require__(216);
-
-var _Checkboxes2 = _interopRequireDefault(_Checkboxes);
 
 var _Modal = __webpack_require__(218);
 
@@ -40034,9 +39920,9 @@ var _Inputs = __webpack_require__(220);
 
 var _Inputs2 = _interopRequireDefault(_Inputs);
 
-var _Index5 = __webpack_require__(221);
+var _Index7 = __webpack_require__(221);
 
-var _Index6 = _interopRequireDefault(_Index5);
+var _Index8 = _interopRequireDefault(_Index7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40081,14 +39967,14 @@ var Content = function (_Component) {
                 'div',
                 { className: 'col-lg-8 col-lg-offset-2' },
                 _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _IndexPage2.default }),
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/components/checkboxes', component: _Checkboxes2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/components/checkboxes', component: _Index6.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/button', component: _Index2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/agenda', component: _Agenda2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/devtools/stack', component: _Stack2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/devtools/tools', component: _DevTools2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/devtools/models', component: _Models2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/modals', component: _Modal2.default }),
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/components/tabs', component: _Index6.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/components/tabs', component: _Index8.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/inputs', component: _Inputs2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/notifications', component: _Index4.default })
               )
@@ -40554,7 +40440,7 @@ var ButtonsPage = function (_Component) {
           _react2.default.createElement(
             'h3',
             null,
-            'icon'
+            'show notifications'
           ),
           _react2.default.createElement(
             'div',
@@ -40641,6 +40527,177 @@ exports.default = Icon;
 
 /***/ }),
 /* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _NormalCheckbox = __webpack_require__(206);
+
+var _NormalCheckbox2 = _interopRequireDefault(_NormalCheckbox);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import Checkboxes from '../ui/Checkboxes'
+var CheckboxesPage = function (_Component) {
+  _inherits(CheckboxesPage, _Component);
+
+  function CheckboxesPage() {
+    _classCallCheck(this, CheckboxesPage);
+
+    return _possibleConstructorReturn(this, (CheckboxesPage.__proto__ || Object.getPrototypeOf(CheckboxesPage)).apply(this, arguments));
+  }
+
+  _createClass(CheckboxesPage, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-8 col-lg-offset-2' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'checkboxes_'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'description of checkboxes component'
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            'normal checkbox'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body' },
+              _react2.default.createElement(_NormalCheckbox2.default, null)
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return CheckboxesPage;
+}(_react.Component);
+
+exports.default = CheckboxesPage;
+
+/***/ }),
+/* 206 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NormalCheckbox = function (_Component) {
+  _inherits(NormalCheckbox, _Component);
+
+  function NormalCheckbox() {
+    _classCallCheck(this, NormalCheckbox);
+
+    return _possibleConstructorReturn(this, (NormalCheckbox.__proto__ || Object.getPrototypeOf(NormalCheckbox)).apply(this, arguments));
+  }
+
+  _createClass(NormalCheckbox, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "pure-checkbox" },
+          _react2.default.createElement("input", { type: "checkbox", name: "check", id: "check" }),
+          _react2.default.createElement(
+            "label",
+            { htmlFor: "check" },
+            " label check"
+          )
+        ),
+        _react2.default.createElement(
+          "code",
+          null,
+          ".pure-checkbox",
+          _react2.default.createElement("br", null),
+          "\xA0 input(type='checkbox', name='check', id='check')",
+          _react2.default.createElement("br", null),
+          "\xA0 label(htmlFor='check') label check"
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "div",
+          { className: "pure-checkbox" },
+          _react2.default.createElement("input", { type: "checkbox", name: "checkDisabled", id: "checkDisabled", disabled: true }),
+          _react2.default.createElement(
+            "label",
+            { htmlFor: "checkDisabled" },
+            " label disabled check"
+          )
+        ),
+        _react2.default.createElement(
+          "code",
+          null,
+          ".pure-checkbox",
+          _react2.default.createElement("br", null),
+          "\xA0 input(type='checkbox', name='checkDisabled', id='checkDisabled')",
+          _react2.default.createElement("br", null),
+          "\xA0 label(htmlFor='checkDisabled') label disabled check"
+        )
+      );
+    }
+  }]);
+
+  return NormalCheckbox;
+}(_react.Component);
+
+exports.default = NormalCheckbox;
+
+/***/ }),
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40901,7 +40958,7 @@ var ButtonsPage = function (_Component) {
 exports.default = ButtonsPage;
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41108,7 +41165,7 @@ var IndexPage = function (_Component) {
 exports.default = IndexPage;
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -41136,7 +41193,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -41393,10 +41450,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 208;
+webpackContext.id = 210;
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41633,7 +41690,7 @@ var Stack = function (_Component) {
 exports.default = Stack;
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42021,7 +42078,7 @@ var Models = function (_Component) {
 exports.default = Models;
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42037,15 +42094,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _TopBlocks = __webpack_require__(212);
+var _TopBlocks = __webpack_require__(214);
 
 var _TopBlocks2 = _interopRequireDefault(_TopBlocks);
 
-var _Sidebar = __webpack_require__(213);
+var _Sidebar = __webpack_require__(215);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
-var _Body = __webpack_require__(215);
+var _Body = __webpack_require__(217);
 
 var _Body2 = _interopRequireDefault(_Body);
 
@@ -42142,7 +42199,7 @@ var Agenda = function (_Component) {
 exports.default = Agenda;
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42289,7 +42346,7 @@ var TopBlocks = function (_Component) {
 exports.default = TopBlocks;
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42309,7 +42366,7 @@ var _CalendarMini = __webpack_require__(155);
 
 var _CalendarMini2 = _interopRequireDefault(_CalendarMini);
 
-var _Filters = __webpack_require__(214);
+var _Filters = __webpack_require__(216);
 
 var _Filters2 = _interopRequireDefault(_Filters);
 
@@ -42348,7 +42405,7 @@ var Sidebar = function (_Component) {
 exports.default = Sidebar;
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42402,7 +42459,7 @@ var Filters = function (_Component) {
 exports.default = Filters;
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42473,258 +42530,6 @@ var Body = function (_Component) {
 }(_react.Component);
 
 exports.default = Body;
-
-/***/ }),
-/* 216 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Checkboxes = __webpack_require__(217);
-
-var _Checkboxes2 = _interopRequireDefault(_Checkboxes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CheckboxesPage = function (_Component) {
-  _inherits(CheckboxesPage, _Component);
-
-  function CheckboxesPage() {
-    _classCallCheck(this, CheckboxesPage);
-
-    return _possibleConstructorReturn(this, (CheckboxesPage.__proto__ || Object.getPrototypeOf(CheckboxesPage)).apply(this, arguments));
-  }
-
-  _createClass(CheckboxesPage, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'row' },
-        _react2.default.createElement(
-          'div',
-          { className: 'col-lg-8 col-lg-offset-2' },
-          _react2.default.createElement(
-            'h1',
-            null,
-            'checkboxes_'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'description of checkboxes component'
-          ),
-          _react2.default.createElement(
-            'h3',
-            null,
-            'normal checkbox'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'panel panel-default' },
-            _react2.default.createElement(
-              'div',
-              { className: 'panel-body' },
-              _react2.default.createElement(
-                'div',
-                { className: 'pure-checkbox' },
-                _react2.default.createElement('input', { type: 'checkbox', name: 'check', id: 'check' }),
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'check' },
-                  ' label check'
-                )
-              ),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                'Code'
-              ),
-              _react2.default.createElement(
-                'code',
-                null,
-                '.pure-checkbox',
-                _react2.default.createElement('br', null),
-                '\xA0 input(type=\'checkbox\', name=\'check\', id=\'check\')',
-                _react2.default.createElement('br', null),
-                '\xA0 label(htmlFor=\'check\') label check'
-              )
-            )
-          ),
-          _react2.default.createElement('br', null),
-          _react2.default.createElement('br', null),
-          _react2.default.createElement(
-            'h3',
-            null,
-            'disabled checkbox'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'panel panel-default' },
-            _react2.default.createElement(
-              'div',
-              { className: 'panel-body' },
-              _react2.default.createElement(
-                'div',
-                { className: 'pure-checkbox' },
-                _react2.default.createElement('input', { type: 'checkbox', name: 'checkDisabled', id: 'checkDisabled', disabled: true }),
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'checkDisabled' },
-                  ' label disabled check'
-                )
-              ),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                'Code'
-              ),
-              _react2.default.createElement(
-                'code',
-                null,
-                '.pure-checkbox',
-                _react2.default.createElement('br', null),
-                '\xA0 input(type=\'checkbox\', name=\'checkDisabled\', id=\'checkDisabled\')',
-                _react2.default.createElement('br', null),
-                '\xA0 label(htmlFor=\'checkDisabled\') label disabled check'
-              )
-            )
-          ),
-          _react2.default.createElement('br', null),
-          _react2.default.createElement('br', null),
-          _react2.default.createElement(
-            'h3',
-            null,
-            'react checkbox'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'panel panel-default' },
-            _react2.default.createElement(
-              'div',
-              { className: 'panel-body' },
-              _react2.default.createElement(_Checkboxes2.default, { name: 'checkboxExampleDisable', label: 'exemple react checkbox disable', disabled: true }),
-              _react2.default.createElement(_Checkboxes2.default, { name: 'checkboxExampleEnable', label: 'exemple react checkbox enable' }),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                'Code'
-              ),
-              _react2.default.createElement(
-                'code',
-                null,
-                '<Checkboxes name="checkboxExample" label="Exemple React Checkbox disable" disabled />',
-                _react2.default.createElement('br', null),
-                _react2.default.createElement('br', null),
-                '<Checkboxes name="checkboxExample" label="Exemple React Checkbox enable" />'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return CheckboxesPage;
-}(_react.Component);
-
-exports.default = CheckboxesPage;
-
-/***/ }),
-/* 217 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Checkboxes = function (_Component) {
-  _inherits(Checkboxes, _Component);
-
-  function Checkboxes(props) {
-    _classCallCheck(this, Checkboxes);
-
-    var _this = _possibleConstructorReturn(this, (Checkboxes.__proto__ || Object.getPrototypeOf(Checkboxes)).call(this, props));
-
-    _this.state = {
-      label: "",
-      name: "",
-      disabled: false
-    };
-    return _this;
-  }
-
-  _createClass(Checkboxes, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log(this.props, 'PROPS');
-      this.setState({
-        label: this.props.label,
-        name: this.props.name,
-        disabled: this.props.disabled
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "pure-checkbox" },
-        _react2.default.createElement("input", { key: this.state.name, type: "checkbox", name: "check", id: this.state.name, disabled: this.props.disabled }),
-        _react2.default.createElement(
-          "label",
-          { htmlFor: this.state.name },
-          " ",
-          this.state.label
-        )
-      );
-    }
-  }]);
-
-  return Checkboxes;
-}(_react.Component);
-
-exports.default = Checkboxes;
 
 /***/ }),
 /* 218 */
