@@ -1911,7 +1911,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(210)("./" + name);
+            __webpack_require__(212)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -4603,7 +4603,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(209)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(211)(module)))
 
 /***/ }),
 /* 1 */
@@ -39884,43 +39884,43 @@ var _Index = __webpack_require__(199);
 
 var _Index2 = _interopRequireDefault(_Index);
 
-var _Index3 = __webpack_require__(203);
+var _Index3 = __webpack_require__(205);
 
 var _Index4 = _interopRequireDefault(_Index3);
 
-var _Index5 = __webpack_require__(205);
+var _Index5 = __webpack_require__(207);
 
 var _Index6 = _interopRequireDefault(_Index5);
 
-var _DevTools = __webpack_require__(207);
+var _DevTools = __webpack_require__(209);
 
 var _DevTools2 = _interopRequireDefault(_DevTools);
 
-var _IndexPage = __webpack_require__(208);
+var _IndexPage = __webpack_require__(210);
 
 var _IndexPage2 = _interopRequireDefault(_IndexPage);
 
-var _Stack = __webpack_require__(211);
+var _Stack = __webpack_require__(213);
 
 var _Stack2 = _interopRequireDefault(_Stack);
 
-var _Models = __webpack_require__(212);
+var _Models = __webpack_require__(214);
 
 var _Models2 = _interopRequireDefault(_Models);
 
-var _Agenda = __webpack_require__(213);
+var _Agenda = __webpack_require__(215);
 
 var _Agenda2 = _interopRequireDefault(_Agenda);
 
-var _Modal = __webpack_require__(218);
+var _Modal = __webpack_require__(220);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Inputs = __webpack_require__(220);
+var _Inputs = __webpack_require__(222);
 
 var _Inputs2 = _interopRequireDefault(_Inputs);
 
-var _Index7 = __webpack_require__(221);
+var _Index7 = __webpack_require__(223);
 
 var _Index8 = _interopRequireDefault(_Index7);
 
@@ -40019,6 +40019,14 @@ var _DropdownDefault = __webpack_require__(202);
 
 var _DropdownDefault2 = _interopRequireDefault(_DropdownDefault);
 
+var _Actions = __webpack_require__(203);
+
+var _Actions2 = _interopRequireDefault(_Actions);
+
+var _Header = __webpack_require__(204);
+
+var _Header2 = _interopRequireDefault(_Header);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40090,6 +40098,34 @@ var ButtonsPage = function (_Component) {
               'div',
               { className: 'panel-body ' },
               _react2.default.createElement(_Dropdown2.default, null)
+            )
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            'actions button'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body ' },
+              _react2.default.createElement(_Actions2.default, null)
+            )
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            'header buttons'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body ' },
+              _react2.default.createElement(_Header2.default, null)
             )
           )
         )
@@ -40171,6 +40207,7 @@ var DropdownButton = function (_Component) {
             )
           )
         ),
+        _react2.default.createElement("br", null),
         _react2.default.createElement("br", null),
         _react2.default.createElement("br", null),
         _react2.default.createElement(
@@ -40265,6 +40302,25 @@ var StepsButton = function (_Component) {
           { className: "btn btn-flux btn-flux-step", type: "button" },
           _react2.default.createElement("img", { src: "../../../public/img/arrowRight.svg" }),
           "\xA0 pr\xF3ximo passo \xA0"
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "code",
+          null,
+          "button.btn.btn-flux.btn-flux-step(type=\"button\") ",
+          _react2.default.createElement("br", null),
+          "\xA0 i.fas.fa-arrow-right",
+          _react2.default.createElement("br", null),
+          "\xA0 pr\xF3ximo"
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "button",
+          { className: "btn btn-flux-default", type: "button" },
+          _react2.default.createElement("img", { src: "../../../public/img/back-step.svg" }),
+          "\xA0 voltar passo \xA0"
         ),
         _react2.default.createElement("br", null),
         _react2.default.createElement("br", null),
@@ -40402,7 +40458,162 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Icon = __webpack_require__(204);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Actions = function (_Component) {
+  _inherits(Actions, _Component);
+
+  function Actions() {
+    _classCallCheck(this, Actions);
+
+    return _possibleConstructorReturn(this, (Actions.__proto__ || Object.getPrototypeOf(Actions)).apply(this, arguments));
+  }
+
+  _createClass(Actions, [{
+    key: "render",
+    value: function render() {
+      var _React$createElement;
+
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "button",
+          (_React$createElement = { type: "button", className: "btn btn-default btn-circle dropdown-toggle" }, _defineProperty(_React$createElement, "type", "button"), _defineProperty(_React$createElement, "data-toggle", "dropdown"), _defineProperty(_React$createElement, "aria-expanded", "true"), _React$createElement),
+          _react2.default.createElement("img", { src: "../../../public/img/action-btn.svg" })
+        ),
+        _react2.default.createElement(
+          "ul",
+          { className: "dropdown-menu dropdown-flux", role: "menu" },
+          _react2.default.createElement(
+            "li",
+            { role: "presentation" },
+            _react2.default.createElement(
+              "a",
+              { role: "menuitem" },
+              "cancelar fluxo"
+            )
+          )
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "code",
+          null,
+          "button.btn.btn-default.btn-circle.dropdown-toggle(type=\"button\", data-toggle=\"dropdown\", aria-expanded=\"true\") ",
+          _react2.default.createElement("br", null),
+          "\xA0 img(src=\"../../../public/img/action-btn.svg\")",
+          _react2.default.createElement("br", null),
+          "ul.dropdown-menu.dropdown-flux(role=\"menu\")",
+          _react2.default.createElement("br", null),
+          "\xA0 li(role=\"presentation\") ",
+          _react2.default.createElement("br", null),
+          "\xA0\xA0 a(role=\"menuitem\") cancelar fluxo ",
+          _react2.default.createElement("br", null)
+        )
+      );
+    }
+  }]);
+
+  return Actions;
+}(_react.Component);
+
+exports.default = Actions;
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HeaderButtons = function (_Component) {
+  _inherits(HeaderButtons, _Component);
+
+  function HeaderButtons() {
+    _classCallCheck(this, HeaderButtons);
+
+    return _possibleConstructorReturn(this, (HeaderButtons.__proto__ || Object.getPrototypeOf(HeaderButtons)).apply(this, arguments));
+  }
+
+  _createClass(HeaderButtons, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "button",
+          { className: "btn btn-md btn-default btn-linte btn-primary btn-new-document dropdown-toggle", type: "button", "data-toggle": "dropdown", "aria-expanded": "true" },
+          "Gerar Documento \xA0",
+          _react2.default.createElement("i", { className: "fas fa-caret-down" })
+        ),
+        _react2.default.createElement(
+          "ul",
+          { className: "dropdown-menu dropdown-menu-right", role: "menu" },
+          _react2.default.createElement(
+            "li",
+            { role: "presentation" },
+            _react2.default.createElement(
+              "a",
+              { className: "btn-status btn-edit-template", role: "menuitem" },
+              "Documento Principal"
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return HeaderButtons;
+}(_react.Component);
+
+exports.default = HeaderButtons;
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Icon = __webpack_require__(206);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -40462,7 +40673,7 @@ var ButtonsPage = function (_Component) {
 exports.default = ButtonsPage;
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40526,7 +40737,7 @@ var Icon = function (_Component) {
 exports.default = Icon;
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40542,7 +40753,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _NormalCheckbox = __webpack_require__(206);
+var _NormalCheckbox = __webpack_require__(208);
 
 var _NormalCheckbox2 = _interopRequireDefault(_NormalCheckbox);
 
@@ -40608,7 +40819,7 @@ var CheckboxesPage = function (_Component) {
 exports.default = CheckboxesPage;
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40697,7 +40908,7 @@ var NormalCheckbox = function (_Component) {
 exports.default = NormalCheckbox;
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40958,7 +41169,7 @@ var ButtonsPage = function (_Component) {
 exports.default = ButtonsPage;
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41165,7 +41376,7 @@ var IndexPage = function (_Component) {
 exports.default = IndexPage;
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -41193,7 +41404,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -41450,10 +41661,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 210;
+webpackContext.id = 212;
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41690,7 +41901,7 @@ var Stack = function (_Component) {
 exports.default = Stack;
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42078,7 +42289,7 @@ var Models = function (_Component) {
 exports.default = Models;
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42094,15 +42305,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _TopBlocks = __webpack_require__(214);
+var _TopBlocks = __webpack_require__(216);
 
 var _TopBlocks2 = _interopRequireDefault(_TopBlocks);
 
-var _Sidebar = __webpack_require__(215);
+var _Sidebar = __webpack_require__(217);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
-var _Body = __webpack_require__(217);
+var _Body = __webpack_require__(219);
 
 var _Body2 = _interopRequireDefault(_Body);
 
@@ -42199,7 +42410,7 @@ var Agenda = function (_Component) {
 exports.default = Agenda;
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42346,7 +42557,7 @@ var TopBlocks = function (_Component) {
 exports.default = TopBlocks;
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42366,7 +42577,7 @@ var _CalendarMini = __webpack_require__(155);
 
 var _CalendarMini2 = _interopRequireDefault(_CalendarMini);
 
-var _Filters = __webpack_require__(216);
+var _Filters = __webpack_require__(218);
 
 var _Filters2 = _interopRequireDefault(_Filters);
 
@@ -42405,7 +42616,7 @@ var Sidebar = function (_Component) {
 exports.default = Sidebar;
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42459,7 +42670,7 @@ var Filters = function (_Component) {
 exports.default = Filters;
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42532,7 +42743,7 @@ var Body = function (_Component) {
 exports.default = Body;
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42548,7 +42759,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Modals = __webpack_require__(219);
+var _Modals = __webpack_require__(221);
 
 var _Modals2 = _interopRequireDefault(_Modals);
 
@@ -42614,7 +42825,7 @@ var ModalPage = function (_Component) {
 exports.default = ModalPage;
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42717,7 +42928,7 @@ var Modals = function (_Component) {
 exports.default = Modals;
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42803,7 +43014,7 @@ var InputsPage = function (_Component) {
 exports.default = InputsPage;
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42819,7 +43030,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SideTab = __webpack_require__(222);
+var _SideTab = __webpack_require__(224);
 
 var _SideTab2 = _interopRequireDefault(_SideTab);
 
@@ -42857,7 +43068,7 @@ var NavbarPage = function (_Component) {
 exports.default = NavbarPage;
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

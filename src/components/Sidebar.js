@@ -12,7 +12,7 @@ class Sidebar extends Component {
         <nav className="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
           <ul className="nav sidebar-nav">
               <li className="sidebar-brand">
-                  <NavLink className="sublink" to="/">
+                  <NavLink to="/">
                      linte_
                   </NavLink>
               </li>
