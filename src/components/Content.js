@@ -4,7 +4,8 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import ButtonsPage from './pages/Buttons'
+import ButtonsPage from './pages/buttons/Index'
+import Notifications from './pages/notifications/Index'
 import DevTools from './pages/DevTools'
 import IndexPage from './pages/IndexPage'
 import StackPage from './pages/Stack'
@@ -12,6 +13,7 @@ import ModelsPage from './pages/Models'
 import Agenda from '../../agenda/Agenda'
 import CheckboxesPage from './pages/Checkboxes'
 import ModalsPage from './pages/Modal'
+import InputsPage from './pages/Inputs'
 class Content extends Component {
   render() {
     return(
@@ -33,6 +35,8 @@ class Content extends Component {
                         <Route path="/devtools/tools" component={DevTools}/>
                         <Route path="/devtools/models" component={ModelsPage}/>
                         <Route path="/components/modals" component={ModalsPage}/>
+                        <Route path="/components/inputs" component={InputsPage}/>
+                        <Route path="/components/notifications" component={Notifications}/>
                     </div>
                 </div>
             </div>
