@@ -36108,6 +36108,15 @@ var Sidebar = function (_Component) {
                   null,
                   _react2.default.createElement(
                     _reactRouterDom.NavLink,
+                    { to: "/components/tabs" },
+                    "Tabs"
+                  )
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  _react2.default.createElement(
+                    _reactRouterDom.NavLink,
                     { to: "/components/inputs" },
                     "inputs"
                   )
@@ -40025,6 +40034,10 @@ var _Inputs = __webpack_require__(220);
 
 var _Inputs2 = _interopRequireDefault(_Inputs);
 
+var _Index5 = __webpack_require__(221);
+
+var _Index6 = _interopRequireDefault(_Index5);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40075,6 +40088,7 @@ var Content = function (_Component) {
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/devtools/tools', component: _DevTools2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/devtools/models', component: _Models2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/modals', component: _Modal2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/components/tabs', component: _Index6.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/inputs', component: _Inputs2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/components/notifications', component: _Index4.default })
               )
@@ -40151,27 +40165,47 @@ var ButtonsPage = function (_Component) {
             '_buttons'
           ),
           _react2.default.createElement(
-            'p',
+            'h3',
             null,
             'dropdown button'
           ),
-          _react2.default.createElement(_DropdownDefault2.default, null),
-          _react2.default.createElement('br', null),
-          _react2.default.createElement('br', null),
           _react2.default.createElement(
-            'p',
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body ' },
+              _react2.default.createElement(_DropdownDefault2.default, null)
+            )
+          ),
+          _react2.default.createElement(
+            'h3',
             null,
             'steps button'
           ),
-          _react2.default.createElement(_Steps2.default, null),
-          _react2.default.createElement('br', null),
-          _react2.default.createElement('br', null),
           _react2.default.createElement(
-            'p',
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body ' },
+              _react2.default.createElement(_Steps2.default, null)
+            )
+          ),
+          _react2.default.createElement(
+            'h3',
             null,
             'dropdown button'
           ),
-          _react2.default.createElement(_Dropdown2.default, null)
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body ' },
+              _react2.default.createElement(_Dropdown2.default, null)
+            )
+          )
         )
       );
     }
@@ -40264,7 +40298,13 @@ var DropdownButton = function (_Component) {
           _react2.default.createElement("br", null),
           "ul.dropdown-menu.dropdown-flux(role=\"menu\")",
           _react2.default.createElement("br", null),
-          "\xA0 li(role=\"presentation\") \xA0\xA0 a(role=\"menuitem\") ALUF \xA0\xA0 a(role=\"menuitem\") AVCB \xA0\xA0 a(role=\"menuitem\") A\xE7\xE3o renovat\xF3ria"
+          "\xA0 li(role=\"presentation\") ",
+          _react2.default.createElement("br", null),
+          "\xA0\xA0 a(role=\"menuitem\") ALUF ",
+          _react2.default.createElement("br", null),
+          "\xA0\xA0 a(role=\"menuitem\") AVCB ",
+          _react2.default.createElement("br", null),
+          "\xA0\xA0 a(role=\"menuitem\") A\xE7\xE3o renovat\xF3ria"
         )
       );
     }
@@ -40512,11 +40552,19 @@ var ButtonsPage = function (_Component) {
             '_notifications'
           ),
           _react2.default.createElement(
-            'p',
+            'h3',
             null,
             'icon'
           ),
-          _react2.default.createElement(_Icon2.default, null)
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body ' },
+              _react2.default.createElement(_Icon2.default, null)
+            )
+          )
         )
       );
     }
@@ -40570,7 +40618,17 @@ var Icon = function (_Component) {
         _react2.default.createElement(
           "div",
           { className: "notificationIcon" },
-          _react2.default.createElement("i", { className: "fas fa-comment" })
+          _react2.default.createElement("i", { className: "fas fa-comment" }),
+          " 5"
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "code",
+          null,
+          ".notificationIcon ",
+          _react2.default.createElement("br", null),
+          "\xA0 i.fa.fa-comment",
+          _react2.default.createElement("br", null)
         )
       );
     }
@@ -42938,6 +42996,145 @@ var InputsPage = function (_Component) {
 }(_react.Component);
 
 exports.default = InputsPage;
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _SideTab = __webpack_require__(222);
+
+var _SideTab2 = _interopRequireDefault(_SideTab);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NavbarPage = function (_Component) {
+  _inherits(NavbarPage, _Component);
+
+  function NavbarPage() {
+    _classCallCheck(this, NavbarPage);
+
+    return _possibleConstructorReturn(this, (NavbarPage.__proto__ || Object.getPrototypeOf(NavbarPage)).apply(this, arguments));
+  }
+
+  _createClass(NavbarPage, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(_SideTab2.default, null)
+      );
+    }
+  }]);
+
+  return NavbarPage;
+}(_react.Component);
+
+exports.default = NavbarPage;
+
+/***/ }),
+/* 222 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SideTab = function (_Component) {
+  _inherits(SideTab, _Component);
+
+  function SideTab() {
+    _classCallCheck(this, SideTab);
+
+    return _possibleConstructorReturn(this, (SideTab.__proto__ || Object.getPrototypeOf(SideTab)).apply(this, arguments));
+  }
+
+  _createClass(SideTab, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "col-md-12" },
+          _react2.default.createElement(
+            "div",
+            { className: "row" },
+            _react2.default.createElement(
+              "div",
+              { className: "col-md-4 tab-col" },
+              _react2.default.createElement(
+                "div",
+                { id: "test", "data-toggle": "collapse", "data-target": "#customTeste", "aria-expanded": "true" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "row text-center tab-rows" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "col-md-6" },
+                    "Ativo"
+                  ),
+                  _react2.default.createElement("div", { className: "col-md-2" }),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "col-md-4" },
+                    "4 total"
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { id: "customTeste", className: "collapse", "aria-expanded": "true" },
+          "OI AQUI"
+        )
+      );
+    }
+  }]);
+
+  return SideTab;
+}(_react.Component);
+
+exports.default = SideTab;
 
 /***/ })
 /******/ ]);

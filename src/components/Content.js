@@ -6,13 +6,13 @@ import {
 } from "react-router-dom";
 import ButtonsPage from './pages/buttons/Index'
 import Notifications from './pages/notifications/Index'
-import DevTools from './pages/DevTools'
+import CheckboxesPage from './pages/checkboxes/Index'
+import DevTools from './pages/guide/DevTools'
 import IndexPage from './pages/IndexPage'
-import StackPage from './pages/Stack'
-import ModelsPage from './pages/Models'
+import StackPage from './pages/guide/Stack'
+import ModelsPage from './pages/guide/Models'
 import Agenda from '../../agenda/Agenda'
-import CheckboxesPage from './pages/Checkboxes'
-import ModalsPage from './pages/Modal'
+import ModalsPage from './pages/guide/Modal'
 import InputsPage from './pages/Inputs'
 import TabsPage from './pages/tabs/Index'
 class Content extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Modals from '../ui/Modals'
+import Modals from '../../ui/Modals'
 class ModalPage extends Component {
   render() {
     return(

@@ -1,11 +1,17 @@
 $(document).ready(function () {
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
+      link = $('.sublink')
      isClosed = false;
 
     trigger.click(function () {
       hamburger_cross();
     });
+
+    link.click(function(){
+      hamburger_cross();
+    })
+
 
     function hamburger_cross() {
 

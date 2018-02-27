@@ -12,39 +12,22 @@ class Sidebar extends Component {
         <nav className="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
           <ul className="nav sidebar-nav">
               <li className="sidebar-brand">
-                  <NavLink to="/">
+                  <NavLink className="sublink" to="/">
                      linte_
                   </NavLink>
               </li>
               <li className="dropdown">
-                <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">components_ <span className="caret"></span></NavLink>
+                <NavLink className="sublink" to="#" className="dropdown-toggle" data-toggle="dropdown">components_ <span className="caret"></span></NavLink>
                 <ul className="dropdown-menu" role="menu">
                   <li className="dropdown-header">user interface</li>
-                  <li><NavLink to="/components/button">buttons</NavLink></li>
-                  <li><NavLink to="/components/agenda"> agenda react component</NavLink></li>
-                  <li><NavLink to="/components/checkboxes">checkboxes</NavLink></li>
-                  <li><NavLink to="/components/tabs">Tabs</NavLink></li>
-                  <li><NavLink to="/components/inputs">inputs</NavLink></li>
-                  <li><NavLink to="/components/notifications">notifications</NavLink></li>
+                  <li><NavLink className="sublink" to="/components/button" data-toggle="offcanvas">buttons</NavLink></li>
+                  <li><NavLink className="sublink" to="/components/checkboxes" data-toggle="offcanvas">checkboxes</NavLink></li>
+                  <li><NavLink className="sublink" to="/components/notifications" data-toggle="offcanvas">notifications</NavLink></li>
+                  <li><NavLink className="sublink" to="/components/agenda" data-toggle="offcanvas"> agenda react component</NavLink></li>
                 </ul>
               </li>
               <li className="dropdown">
-                <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">developer.guide_ <span className="caret"></span></NavLink>
-                <ul className="dropdown-menu" role="menu">
-                  <li className="dropdown-header">stack & dev tools</li>
-                  <li><NavLink to="/devtools/tools">tools</NavLink></li>
-                  <li><NavLink to="/devtools/stack">stack</NavLink></li>
-                  <li><NavLink to="#">infra</NavLink></li>
-                  <li><NavLink to="/devtools/models">model</NavLink></li>
-                  <li><NavLink to="#">development process</NavLink></li>
-                  <li><NavLink to="#">best practices</NavLink></li>
-                  <li><NavLink to="#">utils & helpers</NavLink></li>
-                  <li><NavLink to="#">tests</NavLink></li>
-                  <li><NavLink to="#">configuring Robomongo</NavLink></li>
-                </ul>
-              </li>
-              <li className="dropdown">
-                <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">projects_ <span className="caret"></span></NavLink>
+                <NavLink className="sublink" to="#" className="dropdown-toggle" data-toggle="dropdown">projects_ <span className="caret"></span></NavLink>
                 <ul className="dropdown-menu" role="menu">
                   <li><a href="https://github.com/linte/meteor-linte" target='_blank'>_app</a></li>
                   <li><a href="https://github.com/linte/lambda" target='_blank'>_lambda</a></li>
