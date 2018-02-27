@@ -1,0 +1,25 @@
+<svg width="4" height="16" viewBox="0 0 4 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Shape</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-17676 -6832)">
+<rect x="17676" y="6832" width="4" height="16" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 16612 6774L 17781 6774L 17781 7549L 16612 7549L 16612 6774Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="comportamento_header" clip-path="url(#clip-0)">
+<path d="M 16612 6774L 17781 6774L 17781 7549L 16612 7549L 16612 6774Z" fill="#FFFFFF"/>
+<g id="header">
+<g id="Ellipse 2">
+<use xlink:href="#path0_fill" transform="translate(17661 6823)" fill="#FCFCFC"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 17676 6848)" fill="#767676"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 34 17C 34 26.3888 26.3888 34 17 34C 7.61116 34 0 26.3888 0 17C 0 7.61116 7.61116 0 17 0C 26.3888 0 34 7.61116 34 17Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 1.90515 12C 2.95299 12 3.81031 12.9 3.81031 14C 3.81031 15.1 2.95299 16 1.90515 16C 0.85732 16 0 15.1 0 14C 0 12.9 0.85732 12 1.90515 12ZM 1.90515 10C 0.85732 10 0 9.1 0 8C 0 6.9 0.85732 6 1.90515 6C 2.95299 6 3.81031 6.9 3.81031 8C 3.81031 9.1 2.95299 10 1.90515 10ZM 1.90515 4C 0.85732 4 0 3.1 0 2C 0 0.9 0.85732 0 1.90515 0C 2.95299 0 3.81031 0.9 3.81031 2C 3.81031 3.1 2.95299 4 1.90515 4Z"/>
+</defs>
+</svg>

@@ -788,6 +788,18 @@ div.angrytext {
   background-color: #fcfcfc;
 }
 
+.btn-flux-default {
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 169px;
+  height: 32px;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .btn-flux {
   background-color: #BDBDBD;
   width: 128px;
@@ -835,7 +847,45 @@ div.angrytext {
 .btn-flux-step {
   width: 180px;
   height: 32px;
+}
 
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.btn.btn-linte,.btn.btn-linte:hover,.btn.btn-linte:active,.btn.btn-linte:focus{
+	border: 1px solid #EF3A4D !important;
+	color: #EF3A4D !important;
+	text-transform: lowercase !important;
+	background-color: white !important;
+}
+
+.btn.btn-linte.btn-primary,.btn.btn-linte.btn-primary:hover,.btn.btn-linte.btn-primary:active,.btn.btn-linte.btn-primary:focus{
+	color: #FFFFFF !important;
+	background-color: #EF3A4D !important;
+	border-color: #EF3A4D !important;
 }
 
 /* NOTIFICATION */
